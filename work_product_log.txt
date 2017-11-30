@@ -1,0 +1,24 @@
+wp001	Data processing		Featureize data: treat missing values, normalize, encode categoricals.
+wp002	ModellingF		Build RF, tune some params.  Reach 0.2703 in hold out set. LightGBM with param tuning, reaches 0.284 using wp004 on hold out set..
+wp003	Data processing 2	Target encoding of binned numerical fields containing missing values.  Reduces performance relative to wp001.
+wp004	Feature engineering	Feature engineering ideas from kernels.
+wp005	Data processing		Processing of full train and blind test datasets.
+wp006	Modelling		First submission.  Using wp005 data and wp002 lightbgm classifier. Produced 0.282 on the LB.
+wp007	Modelling		Recursive feature selection with lightGBM.
+wp008	Modelling		Stacknet
+wp009	Modelling		Second submission, using wp005 data and lightgbm ensemble. Produced 0.283 on the LB.
+wp010	Modelling		Third submission, using wp005 data and second iteration of lightgbm ensemble.  Produced 0.284 on the LB.
+wp011	Modelling		Ensemble model based wp007 data.
+wp012	Modelling		Ensemble model with additional GPkernel score.
+wp013   Data processing        New processing ideas, to be incrementally testeda
+wp014	Modelling	       .
+wp015	Modelling		Ensemble model with pipesinto 286
+wp016	Modelling		Extra feature engineering and debugging
+wp017	Modelling		RGF model
+wp018	Modelling		RGF model 2.
+wp019	Submissions		Averaging with kernelmix. So far reach 57th at 0.287 with 0.3 old model and 0.7 kernel mix rank average.
+
+wp021	Modelling		Usage of bagging, median filling and rgf. Resulted in best yet unblended submission, but still 0.285.	
+wp022	Modelling		Usage of bagging all the way down my main stack. Resulted in 0.284 submission, but best CV (0.2904).
+wp023	Modelling		Best public kernels NOT involving genetic features.
+wp024	Modelling		Reversion to wp021 modelling stack, but adding the public kernels of wp023.
